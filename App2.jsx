@@ -4,7 +4,7 @@ function FilterableProductTable({ employees }) {
   const [filterText,setFilterText]=useState('');
 
   return (
-    <div style={{display: "flex",flexDirection: "column",alignItems: "center",marginTop: "20px", maxWidth:"100%"}}>
+    <div style={{display: "flex" ,flexDirection: "column",alignItems: "center",marginTop: "20px", maxWidth:"100%"}}>
        <div style={{width: "900px",border: "1px solid #ccc",padding: "10px",borderRadius:"5px"}}>
         <SearchBar filterText={filterText} onFilterTextChange={setFilterText} />
       <ProductTable employees={employees} filterText={filterText}/>
@@ -77,3 +77,4 @@ const EMP = [
 export default function App() {
   return <FilterableProductTable employees={EMP} />;
 }
+
